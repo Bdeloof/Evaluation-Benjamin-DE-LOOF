@@ -1,13 +1,26 @@
-body {
-      background-color: aqua;
-}
+/* Stylisation générale */
 
 * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Domine', serif;
+      font-size: 20px;
 }
+
+a {
+      text-decoration: none;
+      color: inherit;
+}
+
+.titre-section {
+      text-align: center;
+      text-decoration: underline;
+      padding-top: 30px;
+      font-size: 40px;
+}
+
+/* Stylisation header */
 
 .logo {
       width: 100px;
@@ -20,4 +33,99 @@ body {
       align-items: center;
       justify-content: space-evenly;
       width: 100%;
+}
+
+.nav-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      color: white;
+}
+
+/* Stylisation sur l'histoire */
+
+h1 {
+      margin-left: 30px;
+      padding-top: 10px;
+      font-size: 50px;
+}
+
+.flux-histoire {
+      margin-left: 30px;
+      display: flex;
+      align-items: center;
+}
+
+.affiche-competition {
+      width: 30%;
+      height: 30%;
+      margin-right: 30px;
+}
+
+/* Stylisation les chiffres */
+
+.list-chiffres {
+      margin-left: 100px;
+      padding-top: 20px;
+}
+
+.taille-list {
+      width: 50%;
+}
+
+/* Stylisation formule */
+
+.formule {
+      background-color: rgb(0, 135, 254);
+      color: white;
+      border-radius: 50px;
+}
+
+.table-horaires {
+      border: 2px solid white;
+      color: white;
+      width: 40%;
+      height: 20%;
+}
+
+.flux-horaires {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 30px;
+      margin-right: 30px;
+      padding-top: 20px;
+}
+
+.jour-competition {
+      text-decoration: underline;
+      margin-left: 60px;
+}
+
+/* Stylisation Palmarès */
+
+.forme-palmares {
+      padding-top: 30px;
+      padding-bottom: 20px;
+}
+
+.table-palmares {
+      width: 60%;
+      border: 2px solid rgb(0, 135, 254);
+      margin: auto;
+      text-align: center;
+}
+
+/* Stylisation FOOTER */
+
+.square {
+      height: auto;
+      width: auto;
+      background-color: rgb(0, 135, 254);
+      color: white;
+}
+
+.social-infos {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 20px;
 }
