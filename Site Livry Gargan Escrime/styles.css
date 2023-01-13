@@ -30,6 +30,7 @@ ul, ol {
       background-color: rgb(0, 135, 254);
       display: flex;
       align-items: center;
+      width: auto;
 }
 
 .header-logo {
@@ -99,6 +100,7 @@ ul, ol {
       padding-right: 10px;
 }
 
+
 @media screen and (min-width : 768px) {
       .introduction-site {
             padding-top: 20px;
@@ -116,6 +118,10 @@ ul, ol {
             margin: auto;
             font-size: 1.25em;
             padding-left: 30px;
+      }
+
+      .introduction-site .cover-site h2 {
+            text-align: center;
       }
 }
 
@@ -161,6 +167,9 @@ ul, ol {
 @media screen and (min-width : 1199px) {
       .organigramme {
             padding-left: 50px;
+            border-radius: 30px;
+            margin-left: 30px;
+            margin-right: 30px;
       }
 
       .card-member img {

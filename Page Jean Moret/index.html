@@ -14,20 +14,23 @@
 
 <body>
       <header>
-            <div class="conteneur">
-                  <img src="../Images/5ddeff6f68820_logonew.png" class="logo" alt="Logo Club d'Escrime">
-                  <div>
-                        <h1>Cercle d'Escrime Jean Moret</h1>
-                        <h2>Livry Gargan</h2>
+            <div class="header">
+                  <div class="conteneur">
+                        <img src="../Images/5ddeff6f68820_logonew.png" class="header-logo" alt="Logo Club d'Escrime">
+                        <div>
+                              <h1 class="header-site">Cercle d'Escrime Jean Moret</h1>
+                              <h2 class="header-site">Livry Gargan</h2>
+                        </div>
                   </div>
+      
+                  <nav class="nav-list">
+                        <button type="button" class="btn btn-primary"><a href="#history">Un peu d'histoire</a></button>
+                        <button type="button" class="btn btn-primary"><a href="#numbers">Quelques chiffres</a></button>
+                        <button type="button" class="btn btn-primary"><a href="#formula">Horaires et formules</a></button>
+                        <button type="button" class="btn btn-primary"><a href="#chart">Palmarès de la compétition</a></button>
+                        <button type="button" class="btn btn-primary"><a href="#contact-us">Nous contacter</a></button>
+                  </nav>
             </div>
-            <nav class="nav-list">
-                  <button type="button" class="btn btn-primary"><a href="#histoire">Un peu d'histoire</a></button>
-                  <button type="button" class="btn btn-primary"><a href="#chiffres">Quelques chiffres</a></button>
-                  <button type="button" class="btn btn-primary"><a href="#horaires">Horaires et formules</a></button>
-                  <button type="button" class="btn btn-primary"><a href="#palmares">Palmarès de la compétition</a></button>
-                  <button type="button" class="btn btn-primary"><a href="#contact-us">Nous contacter</a></button>
-            </nav>
       </header>
 
       <main>
@@ -37,27 +40,26 @@
 
             <!-- 1ère section : Histoire -->
 
-            <section id="histoire">
+            <section id="history">
                   <h2 class="titre-section">Un peu d'histoire</h2>
-                  <div class="flux-histoire">
-                        <div>
-                              <br>
+                  <div class="flux-history">
+                        <div class="text-history">
                               <p>La Coupe Jean Moret (du nom du Président fondateur du Club d'Escrime de Livry-Gargan) existe depuis maintenant 39ans. C'est la seule étape Francilienne du Circuit National dans la catégorie Epée Hommes Seniors.</p>
                               <p>Sa forme originelle était celle d'un chalenge par équipes disputé chaque année en fin de saison, regroupant les meilleurs épéistes franciliens.</p>
                               <p>Lors de la création du Circuit National par la Fédération Française d'Escrime, la Coupe Jean Moret est devenue naturellement une étape du classement, et au fil du temps, la plus importante compétition française au regard du nombre de participant sur une catégorie et une arme.</p>
                               <p>Chaque année, c'est une très importante organisation qui se met en marche afin d'assurer le meilleur accueil aux escrimeurs français et étrangers que nous recevons, dans un parc des sports boisé.</p>
                         </div>
-                        <img src="../Images/6331a08e13817_AfficheFormat900x1000.jpg" class="affiche-competition" alt="Affiche coupe Jean Moret">
+                        <img src="../Images/6331a08e13817_AfficheFormat900x1000.jpg" class="poster-competition" alt="Affiche coupe Jean Moret">
                   </div>
             </section>
 
             <!-- 2ème section : Les chiffres -->
 
-            <section id="chiffres">
+            <section id="numbers">
                   <h2 class="titre-section">Quelques chiffres</h2>
-                  <div class="list-chiffres">
+                  <div class="list-numbers">
                         <p>Voici quelques chiffres en rapport avec la coupe Jean Moret :</p>
-                        <ul class="list-group taille-list">
+                        <ul class="list-group">
                               <li class="list-group-item">3 jours d'organisation dont 2 jours de compétition</li>
                               <li class="list-group-item">2 gymnases</li>
                               <li class="list-group-item">32 pistes et leurs appareils de signalisation</li>
@@ -70,22 +72,22 @@
                   </div>
             </section>
 
-            <!-- 3ème section : Organisation compétition -->
+            <!-- 3ème section : Formule compétition -->
 
-            <section class="formule" id="horaires">
+            <section class="formula" id="formula">
                   <h2 class="titre-section">Horaires et formules</h2>
-                  <p class="jour-competition">Samedi 8 Octobre 2022 (Epreuve qualificative)</p>
-                  <div class="flux-horaires">
+                  <p class="day-competition">Samedi 8 Octobre 2022 (Epreuve qualificative)</p>
+                  <div class="flux-schedule">
                         <div>
                               <p>Pour ce premier jour qui sert d'épreuve qualificative pour le dimanche, il y aura jusqu'à 168 tireurs. Voici la formule qualificative pour participer au circuit national qui se déroulera le dimanche.</p>
                               <ul>
-                                    <p class="sous-ligne">Formule de l'épreuve qualificative</p>
+                                    <p class="underline">Formule de l'épreuve qualificative</p>
                                     <li>Tour de poules à 7 ou 6, avec décalage par comité régional et par club, jusqu'à 25% d'éliminés</li>
                                     <li>X tireurs qualifiés à l'issue des poules, pour atteindre 98 tireurs pour l'épreuve nationale</li>
                                     <li>Tableau d'élimination directe pour qualifier 64 tireurs.</li>
                               </ul>
                         </div>
-                              <table class="table table-bordered table-horaires">
+                              <table class="table table-bordered table-schedule">
                                     <tbody>
                                           <tr>
                                                 <td>Appel : 10h30</td>
@@ -99,17 +101,18 @@
                                     </tbody>
                               </table>
                   </div>
-                  <p class="jour-competition">Dimanche 9 Octobre 2022 (Circuit National)</p>
-                  <div class="flux-horaires">
+                  <br>
+                  <p class="day-competition">Dimanche 9 Octobre 2022 (Circuit National)</p>
+                  <div class="flux-schedule">
                         <div>
                               <p>Pour cette épreuve du circuit national, il y aura les 64 tireurs qualifiés lors de l'épreuve qualificative de la veille auxquel on ajoute les tireurs qualifiés après la phase de poules de la veille ainsi que les premiers tireurs au classement FFE et FIE.</p>
                               <ul>
-                                    <p class="sous-ligne">Formule de l'épreuve nationale</p>
+                                    <p class="underline">Formule de l'épreuve nationale</p>
                                     <li>Tour de poules de 7 en deux vagues avec X éliminés pour former un tableau de 64 complet.</li>
                                     <li>Tableau d'élimination directe sans repêchage.</li>
                               </ul>
                         </div>
-                        <table class="table table-bordered table-horaires">
+                        <table class="table table-bordered table-schedule">
                               <tbody>
                                     <tr>
                                           <td>Appel : 8h30</td>
@@ -122,11 +125,11 @@
                   </div>
             </section>
 
-            <section id="palmares">
+            <section id="chart">
                   <h2 class="titre-section">Palmarès de l'épreuve :</h2>
-                  <div class="forme-palmares">
+                  <div class="form-chart">
                         <p>Voici le palmarès de l'épreuve sur les cinq dernières éditions :</p>
-                        <div class="table-palmares">
+                        <div class="table-chart">
                               <table class="table table-sm">
                                     <thead>
                                           <tr>
@@ -135,7 +138,7 @@
                                     </thead>
                                     <tbody>
                                           <tr>
-                                                <td>1 - Romain Cannone</th>
+                                                <td>1 - Romain Cannone</td>
                                                 <td>2 - Alexandre Bardenet</td>
                                                 <td>3 - Nelson Lopez Pourtier</td>
                                                 <td>3 - Raphaël Tulen</td>
@@ -148,7 +151,7 @@
                                     </thead>
                                     <tbody>
                                           <tr>
-                                                <td>1 - Alex Fava</th>
+                                                <td>1 - Alex Fava</td>
                                                 <td>2 - Paul Allegre</td>
                                                 <td>3 - Romain Cannone</td>
                                                 <td>3 - Raphaël Tulen</td>
@@ -161,7 +164,7 @@
                                     </thead>
                                     <tbody>
                                           <tr>
-                                                <td>1 - Tristan Tulen</th>
+                                                <td>1 - Tristan Tulen</td>
                                                 <td>2 - Nelson Lopez Pourtier</td>
                                                 <td>3 - Alex Fava</td>
                                                 <td>3 - Aymerick Gally</td>
@@ -174,7 +177,7 @@
                                     </thead>
                                     <tbody>
                                           <tr>
-                                                <td>1 - Mathias Biabiany</th>
+                                                <td>1 - Mathias Biabiany</td>
                                                 <td>2 - Paul Allegre</td>
                                                 <td>3 - Houssam Elkord</td>
                                                 <td>3 - Tristan Tulen</td>
@@ -187,7 +190,7 @@
                                     </thead>
                                     <tbody>
                                           <tr>
-                                                <td>1 - Alexandre Bardenet</th>
+                                                <td>1 - Alexandre Bardenet</td>
                                                 <td>2 - Julien Granet</td>
                                                 <td>3 - Nelson Lopez Pourtier</td>
                                                 <td>3 - Virgile Marchal</td>
@@ -202,19 +205,21 @@
                   <section class="square" id="contact-us">
                         <h4 class="titre-section">Nous contacter</h4>
                         <div class="social-infos">
-                              <address>
-                                    <span><b>Cercle d'escrime Jean Moret</b></span>
-                                    <br>
-                                    <span>12 Allée Danton</span>
-                                    <br>
-                                    <span>93190 Livry Gargan</span>
-                              </address>
                               <div>
+                                    <address>
+                                          <span><b>Cercle d'escrime Jean Moret</b></span>
+                                          <br>
+                                          <span>12 Allée Danton</span>
+                                          <br>
+                                          <span>93190 Livry Gargan</span>
+                                    </address>
+                              </div>
+                              <div class="social-medias">
                                     <h5>Nos réseaux sociaux :</h5>
                                     <div>
-                                          <button type="button" class="btn btn-primary"><a href="https://www.facebook.com/livrygarganescrime">Facebook</a></button>
-                                          <button type="button" class="btn btn-warning"><a href="https://www.instagram.com/livry_gargan_escrime/?hl=fr">Instagram</a></button>
-                                          <button type="button" class="btn btn-danger"><a href="https://www.youtube.com/channel/UC8C21QMHidLfBl0VhmKKbPA">Youtube</a></button>
+                                          <button type="button" class="btn btn-primary"><a href="https://www.facebook.com/livrygarganescrime" target="_blank">Facebook</a></button>
+                                          <button type="button" class="btn btn-warning"><a href="https://www.instagram.com/livry_gargan_escrime/?hl=fr" target="_blank">Instagram</a></button>
+                                          <button type="button" class="btn btn-danger"><a href="https://www.youtube.com/channel/UC8C21QMHidLfBl0VhmKKbPA" target="_blank">Youtube</a></button>
                                     </div>
                               </div>
                         </div>
