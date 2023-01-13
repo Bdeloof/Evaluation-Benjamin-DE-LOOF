@@ -17,87 +17,160 @@ ul, ol {
 }
 
 .titre-section {
+      font-size: 1.5em;
       text-align: center;
       text-decoration: underline;
       padding-top: 30px;
+      padding-bottom: 20px;
 }
 
-/* Stylisation Header */
+/* Stylisation section HEADER */
 
-.logo {
-      width: 100px;
-}
-
-.conteneur {
+.header {
       background-color: rgb(0, 135, 254);
-      color: white;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
-      width: 100%;
+}
+
+.header-logo {
+      width: 50%;
+      display: block;
+      margin: auto;
+}
+
+.header-site {
+      display: none;
 }
 
 .nav-list {
+      width: 50%;
       display: flex;
-      justify-content: center;
-      flex-wrap: nowrap;
+      flex-direction: column;
 }
 
-/* Stylisation Introduction site */
+@media screen and (min-width : 768px) {
+      .header {
+            display: flex;
+            justify-content: space-around;
+      }
+
+      .header-logo {
+            width: 100px;
+            padding-left: 20px;
+      }
+
+      .header-site {
+            display: block;
+      }
+
+      .conteneur {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 50%;
+            font-size: 10px;
+      }
+
+      .nav-list {
+            width: auto;
+            display: flex;
+      }
+}
+
+/* Stylisation Intro site */
 
 .introduction-site {
-      padding-top: 20px;
-}
-
-.cover-site {
-      display: flex;
-      flex-direction: row;
-}
-
-.presentation-site {
-      font-size: 20px;
-      margin-left: 20px;
-      margin-right: 20px;
-      padding-top: 20px;
-}
-
-.mise-en-page-cover {
-      padding-top: 20px;
+      padding-top: 10px;
+      margin-left: 10px;
 }
 
 .image-fencer {
-      border-radius: 5px;
-      margin-right: 30px;
+      width: 75%;
+      display: block;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 20px;
 }
 
-/* Stylisation 1ère section */
+.layout-intro {
+      font-size: 1.25em;
+      padding-left: 10px;
+      padding-right: 10px;
+}
+
+@media screen and (min-width : 768px) {
+      .introduction-site {
+            padding-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+      }
+}
+
+@media screen and (min-width : 1199px) {
+      .layout-intro {
+            display: flex;
+      }
+
+      .intro-text {
+            margin: auto;
+            font-size: 1.25em;
+            padding-left: 30px;
+      }
+}
+
+/* Stylisation Organigramme */
 
 .organigramme {
       background-color: rgb(0, 135, 254);
       color: white;
-      border-radius: 100px;
 }
 
-.name-organigramme {
+.organigramme-layout {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      font-size: 20px;
 }
 
-.row {
-      display: flex;
-      justify-content: center;
-      padding-top: 20px;
-      padding-left: 50px;
+.card-member {
+      margin-left: 30px;
+      width: max-content;
+      text-align: center;
 }
 
+.organigramme-layout img {
+      border: 2px black solid;
+}
 
-/* Stylisation Tableau horaires */
+@media screen and (min-width : 768px) {
+      .card-member img {
+            width: 30vw;
+      }
+
+      .organigramme-layout {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+      }
+
+      .container {
+            margin-left: 5px;
+      }
+}
+
+@media screen and (min-width : 1199px) {
+      .organigramme {
+            padding-left: 50px;
+      }
+
+      .card-member img {
+            width: 25vw;
+      }
+}
+
+/* Stylisation section Les Horaires */
 
 .horaire {
-      width: 40%;
-      margin: auto;
       text-align: center;
 }
 
@@ -110,8 +183,16 @@ ul, ol {
       background-color: rgb(0, 135, 254);
 }
 
-.jours {
+.table thead{
       vertical-align: middle;
+}
+
+@media screen and (min-width : 1199px) {
+      .horaire {
+            width: 40%;
+            margin: auto;
+            text-align: center;
+      }
 }
 
 /* Stylisation FOOTER */
@@ -121,10 +202,17 @@ ul, ol {
       width: auto;
       background-color: rgb(0, 135, 254);
       color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 }
 
-.social-infos {
-      display: flex;
-      justify-content: space-evenly;
-      padding-top: 20px;
+@media screen and (min-width : 768px) {
+      .social-infos {
+            display: flex;
+      }
+
+      .social-medias {
+            padding-left: 30px;
+      }
 }
