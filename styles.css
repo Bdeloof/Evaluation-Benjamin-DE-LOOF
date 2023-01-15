@@ -166,15 +166,17 @@ ul, ol {
 
 @media screen and (min-width : 1199px) {
       .organigramme {
-            padding-left: 50px;
+            padding-left: 150px;
             border-radius: 30px;
             margin-left: 30px;
             margin-right: 30px;
       }
 
-      .card-member img {
-            width: 25vw;
+      .organigramme-layout .card-member img {
+            width: 20vw;
       }
+
+
 }
 
 /* Stylisation section Les Horaires */

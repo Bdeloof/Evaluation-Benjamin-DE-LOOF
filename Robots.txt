@@ -1,0 +1,23 @@
+User-agent: Googlebot
+Disallow: /personnel/
+
+User-agent: Mediapartners-Google
+Disallow:
+
+User-agent: Googlebot
+Disallow: /*.doc$
+
+User-agent: AdsBot-Google (+http://www.google.com/adsbot.html)
+Disallow: /
+
+User-agent: bingbot
+Disallow: /repertoire1/
+
+User-agent: msnbot
+Disallow: /repertoire1/
+Disallow: /repertoire2/
+
+User-agent: *
+Disallow: /
+
+:Sitemap: http://www.cercle-escrime-jean-moret.fr/sitemap.xml
